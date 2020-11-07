@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<div class="loader-container" >
+    <div class="loader"></div>
+</div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-Benz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Testing project for SWD 9"/>
+<!--    <meta name="keywords" content="mms, mms it, it service, best it service, php class, web developer, web class"/>-->
+    <meta name="author" content="MMS Developer Team"/>
+
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="Testing project for SWD 9"/>
+    <meta property="og:image" content="img/ss.png"/>
+    <meta property="og:url" content="https://wlsh.000webhostapp.com"/>
+    <meta property="og:site_name" content="Testing"/>
+    <meta property="og:description" content="San Kyit Thar Pr"/>
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.svg" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+        .h1{
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        .p{
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .h3{
+            font-family: 'Anton', sans-serif;
+        }
+        .h4{
+            font-family: 'Roboto Mono', monospace;
+        }
+        .no{
+            font-family: 'Raleway', sans-serif;
+            font-size: 80px;
+        }
+        .no-txt{
+            font-family: 'Raleway', sans-serif;
+        }
+        
+        .loader-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:#0D0D0D;
+            height: 100vh;
+            position: fixed;
+            width: 100%;
+            z-index: 2000;
+        }
+        .loader,
+.loader:before,
+.loader:after {
+  background: red;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader {
+  color: red;
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
+    </style>
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class=" site-nav container-fluid wow animate__bounceInDown ani-2">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar header navbar-expand-lg navbar-light shadow ">
+                            <a class="navbar-brand" href="#">
+                                <img src="img/nav.svg" style="width: 150px;">
+                            </a>
+                            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <i class="text-white fa fa-bars menu-icon"></i>
+                            </button>
+                          
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                              <ul class="navbar-nav ">
+                                <li class="nav-item ">
+                                    <a class="nav-link text-uppercase text-white p active" href="#home">Home</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase text-white p" href="#about">about</a>
+                                </li>
+
+                                <li class="nav-item ">
+                                    <a class="nav-link text-uppercase text-white p" href="#part ">parts </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase text-white p" href="#engine ">engine </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase text-white p" href="#blog">blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase text-white p" href="#contact">Contact</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+  
+    <section class="">
+        <div class="up text-center">
+            <a href="#home">
+                <img src="img/chevron-up-solid.svg" style="width: 30px;">
+            </a>
+        </div>
+    </section>   
+    
+
+    <section id="home" class="home container-fluid wow animate__fadeIn ani-1">
+        <div class="row">
+            <div class="container">
+                <div class="row min-vh-100">
+                    <div class="col-12 d-flex align-items-center wow animate__fadeInLeft ani-3">
+                        <div class="home-txt">
+                            <img src="img/Image 4.svg" alt="">
+                            <h1 class="text-white my-md-3 my-4  h1">Unleash the<br>True Power</h1>
+                            <p class="text-white-50 home-p p">The Mercedes-AMG GT combines the fascination of an authentic sports car with segment-specific technology leadership and high practicality.</p>
+                            <div class="pre">
+                                <a href="#"><img src="img/pre-order button.svg" class="pt-4"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section id="about" class="about container-fluid">
+       <div class="row">
+        <div class=" container">
+            <div class="row pt-5 mt-5">
+                <div class="col-12 d-flex align-items-center justify-content-center pt-5">
+                    <div class="text-center wow animate__bounceInDown ani-1">
+                        <h3 class="h3">ABOUT</h3>
+                        <img src="img/Rectangle 6.svg" >
+                    </div>
+                </div>
+            </div>
+            <div class="row min-vh-100 ">
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center pb-5 wow animate__slideInLeft ani-2">
+                    <div class="about-img text-right pr-md-5 about-hover">
+                        <img src="img/Group 10.svg" class="about-img-in" >
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-center wow animate__slideInRight ani-3">
+                    <div class="">
+                        <h4 class="text-black h4">SECOND TO NONE</h4>
+                        <img src="img/Rectangle 29.svg" class="w-50 mb-4">
+                        <h1 class="h1">Mercedes<br>AMG GT Coupé</h1>
+                        <p class="about-txt py-4 text-black-50 p">The Mercedes-AMG GT combines the fascination of an authentic sports car with segment-specific technology leadership and high practicality. With a top speed of 304 km/h and an acceleration from 0 to 100 km/h in 4.0 seconds, the Mercedes-AMG GT fits optimally into a sporty lifestyle. He expresses the essence of the performance brand AMG.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+   </section>
+
+   <section id="part" class="part container-fluid" class="partfix">
+       <div class="row">
+        <div class=" container">
+            <div class="row pt-5 mt-5">
+                <div class="col-12 d-flex align-items-center justify-content-center pt-5">
+                    <div class="text-center wow animate__bounceInDown an-1">
+                        <h3 class="text-white h3">PARTS</h3>
+                        <img src="img/Rectangle 6.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row min-vh-100 ">
+                <div class="col-12 col-md-6 d-flex align-items-center pb-5 pb-md-0 wow animate__slideInLeft ani-2">
+                    <div class="about-img text-right pr-md-5 about-hover">
+                        <img src="img/Artboard – 3.svg" class="part-img-in" >
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-center wow animate__slideInRight ani-3">
+                    <div class="">
+                        <h4 class="text-white h4 ">Sporty cockpit. Exclusive interior.</h4>
+                        <img src="img/Rectangle 29.svg" class="w-50 mb-4">
+                        <h1 class="text-white h1">Interior</h1>
+                        <p class="about-txt py-4 text-white-50 p">The cockpit impresses with its high-tech interior: a user interface concept with fully digital instruments and a 10.2-inch display. At the center is the new center console with innovative display switches. With the AMG Performance steering wheel in Nappa leather with AMG steering wheel buttons, the vehicle is under optimal control. Extremely high-quality materials give the interior a handcrafted character.</p>
+                        <div class="btn btn-primary mb-5 p">PRE-ORDER NOW</div>
+                    </div>
+                </div>
+                <div class="col-12 wow animate__bounceInUp ani-4">
+                    <div class=" img-slick pb-5 pb-md-0 about-hover">
+                        <img src="img/Image 10.svg" class="img-slick-in">
+                        <img src="img/Image 8.svg" class="img-slick-in">
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+   </section>
+
+   <section id="engine" class="engine container-fluid " class="enginefix ">
+    <div class="row ">
+     <div class=" container">
+         <div class="row pt-5 mt-5">
+             <div class="col-12 d-flex align-items-center justify-content-center pt-3 pt-md-5">
+                 <div class="pb-md-5 pb-3 text-center wow animate__bounceInDown ani-1">
+                     <h3 class="text-black h3">ENGINE</h3>
+                     <img src="img/Rectangle 6.svg" alt="">
+                 </div>
+             </div>
+         </div>
+         <div class="row min-vh-100 ">
+             <div class="col-12 col-md-6 d-flex align-items-center wow animate__slideInLeft ani-3">
+                 <div class="about-img text-light pr-md-5 about-hover">
+                     <img src="img/engine.svg" class="engine-img-in" >
+                 </div>
+             </div>
+             <div class="col-12 col-md-6 d-flex align-items-center  pl-3 pl-md-5 pt-5 pt-md-0">
+                 <div class="wow animate__slideInRight ani-4">
+                     <h4 class="text-black h4">Masterpiece.</h4>
+                     <img src="img/Rectangle 29.svg" class="w-50 mb-4">
+                     <h1 class="text-black h1">Powertrain.</h1>
+                     <p class="about-txt py-4 text-black-50 p">An aggregate of racing-level performance - the V8 twin-turbo with twin turbochargers inside is designed for maximum performance and dynamic engine mounts adapt to any driving situation. In addition, the dry sump lubrication deepens the low installation position even further. Thrilling: explosive responsiveness with high torque.
+                    </p>
+                     <div class="list mb-5">
+                         <ul>
+                             <li>
+                                <div class="d-flex justify-content-start align-items-start">
+                                    <p class="text-black-50 p">Fuel consumption &nbsp; </p>
+                                    <p class="text-danger font-weight-bolder p">12.4 l/100 km</p>
+                                </div>
+                             </li>
+                         </ul>
+                         <ul>
+                            <li>
+                               <div class="d-flex justify-content-start align-items-start">
+                                   <p class="text-black-50 p">CO2 emissions &nbsp; </p>
+                                   <p class="text-danger font-weight-bolder p">284 g/km</p>
+                               </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                               <div class="d-flex justify-content-start align-items-start">
+                                   <p class="text-danger font-weight-bolder p">Emission Statement</p>
+                               </div>
+                            </li>
+                        </ul>
+                     </div>
+                 </div>
+             </div>
+         </div>
+        </div>
+     </div>
+    </div>
+   </section>
+
+   <section id="blog" class="container-fluid">
+        <div class="row blog">
+            <div class="container">
+                <div class="row min-vh-100">
+                    <div class="col-12 d-flex align-items-center justify-content-center pt-5 mt-5">
+                        <div class="mb-5 mb-md-0 text-center  wow animate__bounceInDown ani-1">
+                            <h3 class="text-white h3">BLOG</h3>
+                            <img src="img/Rectangle 6.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 d-flex  justify-content-center my-4  wow animate__fadeIn ani-2">
+                        <div class="card text-center" >
+                            <div class="card-body">
+                                <a href="https://icon-library.net/icon/no-fee-icon-11.html" title="No Fee Icon #174914"><img src="https://icon-library.net//images/no-fee-icon/no-fee-icon-11.jpg" width="22%" class="mb-3"/></a>
+                                <h1 class="aa text-white font-weight-light mb-2  no " >115</h1>
+                                <h4 class="text-white font-weight-light no-txt"> Price in US (k,$)</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-3 d-flex  justify-content-center my-4  wow animate__fadeIn ani-3">
+                        <div class="card text-center" >
+                            <div class="card-body">
+                                <img src="img/sale-2.png" style="width: 20%;" class="mb-3">
+                                <h1 class="aa text-white font-weight-light mb-2 no">270</h1>
+                                <h4 class="text-white font-weight-light no-txt">Number of Sales (k)</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-3 d-flex  justify-content-center my-4  wow animate__fadeIn ani-4">
+                        <div class="card text-center" >
+                            <div class="card-body">
+                                <img src="img/check.png" style="width: 20%;" class="mb-3">
+                                <h1 class="aa text-white font-weight-light mb-2  no" >30</h1>
+                                <h4 class="text-white font-weight-light no-txt">Models</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-3 mb-5 d-flex  justify-content-center my-4  wow animate__fadeIn ani-5">
+                        <div class="card text-center" >
+                            <div class="card-body">
+                                <img src="img/speed.png" style="width: 30%;" class="mb-3">
+                                <h1 class="aa text-white font-weight-light mb-2 no " >312</h1>
+                                <h4 class="text-white font-weight-light no-txt"> Top speed (km/h)</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+
+   <section id="contact" class="contact container-fluid">
+       <div class="row">
+           <div class="container">
+               <div class="row min-vh-100 mb-5">
+                <div class="col-12 d-flex align-items-center justify-content-center pt-5 mt-5 ">
+                    <div class=" mb-md-0 text-center wow animate__bounceInDown ani-1 ">
+                        <h3 class="text-black h3 ">CONTACT</h3>
+                        <img src="img/Rectangle 6.svg" alt="">
+                    </div>
+                </div>
+                   <div class="col-12 col-md-6 d-flex align-items-center mt-5 mt-md-0 ">
+                       <div class="wow animate__slideInLeft ani-2">
+                           <img src="img/Image 4.svg" alt="">
+                           <h1 class="my-3 h1">Get yours today!</h1>
+                           <p class="text-black-50 p">The Mercedes-AMG GT is a racing icon that is <br>second to none.</p>
+                           <button class="btn btn-primary my-3 mb-5 mb-md-0 p">PRE-ORDER NOW</button>
+                           <div class="mt-3 mb-5 d-md-block d-lg-block d-none ">
+                            <i class="fa fa-facebook-f"></i>
+                            <i class="fa fa-twitter px-4"></i>
+                            <i class="fa fa-instagram"></i>
+                           </div>
+                           <p class="text-black-50 mb-5 d-md-block d-lg-block d-none p">© 2019 Mercedes-AMG. All rights reserved.</p>
+                       </div>
+                   </div>
+                   <div class="col-12 col-md-6 d-flex align-items-center">
+                       <div class="box wow animate__slideInRight ani-3">
+                            <div class="ml-5 mt-5">
+                                <p class="text-white p">Call us for questions</p>
+                            </div>
+                            <div class="text-center">
+                                <img src="img/Group 13.svg" style="width: 80%;" class="mx-md-5 mt-2 big">
+                            </div>
+                            <div class="ml-5 mt-5">
+                                <p class="text-white p">Email us for inquiries</p>
+                            </div>
+                            <div class="text-center mb-5">
+                                <img src="img/Group 14.svg" style="width: 80%;" class="mx-md-5 mt-2">
+                            </div>
+                       </div>
+                   </div>
+                   <div class="col-12 mb-2 d-md-none d-lg-none d-block">
+                    <div class="mt-5  mb-3 d-md-none d-lg-none d-block">
+                        <i class="fa fa-facebook-f"></i>
+                        <i class="fa fa-twitter px-4"></i>
+                        <i class="fa fa-instagram"></i>
+                    </div>
+                    <p class="text-black-50  d-md-none d-lg-none d-block p">© 2019 Mercedes-AMG. All rights reserved.</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="vendor/wow/wow.js"></script>
+    <script src="vendor/counter/jquery.counterup.js"></script>
+    <script src="vendor/way_point/jquery.waypoints.min.js"></script>
+    
+    <Script>
+        wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animate__animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
+
+        $('.aa').counterUp({
+    delay: 10,
+    time: 3000
+    });
+    </Script>
+
+    <script src="index.js"></script>
+</body>
+</html>
